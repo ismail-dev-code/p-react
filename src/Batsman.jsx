@@ -22,7 +22,7 @@ export default function Batsman() {
     setRuns(updatedSix);
   };
   return (
-    <div className="card">
+    <div className="card bg-amber-200">
       {runs > 50 && <p>You Score 50</p>}
       <h3>Player: Bangladesh</h3>
       <p>
@@ -30,9 +30,11 @@ export default function Batsman() {
       </p>
       <p><small>total fours: {fours}</small></p>
       <h3>Score: {runs}</h3>
+      <div className="p-2">
       <button onClick={handleSingles}>1 Run</button>
       <button onClick={handleFour}>4 Run</button>
       <button onClick={handleSix}>6 Run</button>
+      </div>
     </div>
   );
 }
